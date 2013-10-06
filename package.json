@@ -1,6 +1,6 @@
 {
   "name": "Code-Runner",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "A node.js app to compile and get output of programs.",
   "main": "web.js",
   "scripts": {
