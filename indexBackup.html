@@ -1,19 +1,30 @@
 <html>
 	<head>
-		<meta http-equiv="Content-Type" 
-		content="text/html; charset=UTF-8" 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" 
 
 		name="Cloud Compiler,java,c++,c,python,bash" content="Compile code in browser and get output.">
-		<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.2/flatly/bootstrap.min.css">
+
+		<style>
+          body { background: #C0C0C0; }
+          
+          a:link {
+			COLOR: #0000FF ;
+			}
+
+		  a:visited{
+			COLOR: #0000FF;
+			}
+        </style>
 	</head>
 	
-	<body background="a.JPG">
+	<body>
 		
 		<div class="container">
 
-		
+		<p>&nbsp;</p>
 		<div class="hero-unit">
-		<h1> CodeRunner</h1>
+		<h1>CodeRunner</h1>
 		<h3> &nbsp  &nbsp  &nbsp  &nbsp- A site to compile your programs and get its output.</h3>
 		</div>
 		
@@ -22,21 +33,21 @@
 		<div class="span4">
 		<form action="/uploadJava" enctype="multipart/form-data" method="post">
 		<input type="file" name="upload" multiple="multiple">
-		<input type="submit" value="Upload Java file" />
+		<input type="submit" class="btn btn-block btn-primary" value="Upload Java file" />
 		</form>
 		</div>
 
 		<div class="span4">
 		<form action="/uploadC" enctype="multipart/form-data" method="post">
 		<input type="file" name="upload" multiple="multiple">
-		<input type="submit" value="Upload C file" />
+		<input type="submit" class="btn btn-block btn-primary" value="Upload C file" />
 		</form>
 		</div>
 
 		<div class="span4">
 		<form action="/uploadCPP" enctype="multipart/form-data" method="post">
 		<input type="file" name="upload" multiple="multiple">
-		<input type="submit" value="Upload C++ file" />
+		<input type="submit" class="btn btn-block btn-primary" value="Upload C++ file" />
 		</form>
 		</div>
 
@@ -44,7 +55,7 @@
 		<div class="span4">
 		<form action="/uploadPython" enctype="multipart/form-data" method="post">
 		<input type="file" name="upload" multiple="multiple">
-		<input type="submit" value="Upload Python file" />
+		<input type="submit" class="btn btn-block btn-primary" value="Upload Python file" />
 		</form>
 		</div>
 
@@ -52,7 +63,7 @@
 		<div class="span4">
 		<form action="/uploadBash" enctype="multipart/form-data" method="post">
 		<input type="file" name="upload" multiple="multiple">
-		<input type="submit" value="Upload .sh file" />
+		<input type="submit" class="btn btn-block btn-primary" value="Upload .sh file" />
 		</form>
 		</div>
 
@@ -61,13 +72,10 @@
 		
 		<p> Note : Java file should have main class name as test.</p>
 	
-		<script src="js/bootstrap.min.js"></script>
-
+		<script src="//raw.github.com/sjs7007/CodeRunner/master/public/js/bootstrap.min.js"></script>
+		<footer class="text-center">
+			<p> Author : S.J. Saravanan &bull; Contact information: <a href="mailto:sjs7007@gmail.com"> sjs7007@gmail.com</a> &bull;Contribute to Code : <a href="https://github.com/sjs7007/CodeRunner">GitHub Page</a></p>
+		</footer>
 		</div><!-- .container -->
 	</body>
-
-	<footer> 
-		<p> Author : S.J. Saravanan </p>
-		<p>Contact information: <a href="mailto:sjs7007@gmail.com"> sjs7007@gmail.com</a>.</p>
-	</footer>
 </html>
